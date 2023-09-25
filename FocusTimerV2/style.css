@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body{
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+#app{
+  display: flex;
+  gap: 25rem
+}
+
+.flex{
+  display: flex;
+}
+
+.themes{
+  display: flex;
+}
+
+.card1,.card2{
+  display: flex;
+  gap: 3rem ;
+  margin-top: 1.5rem;
+}
+
+
+#timer{
+  font-size: 9.6rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#controls{
+  border-radius: 999px;
+  padding:  .4rem;
+  background-color: transparent;
+}
+
+#controls,
+#sounds{
+  height: 4.8rem;
+  justify-content: center;
+  gap: 1.6rem
+}
+
+#controls button,
+#sounds button{
+  background-color: transparent;
+  border: 0;
+  
+  cursor: pointer;
+
+  font-size: 4.8rem;
+}
+
+#sounds button{
+  border: 1px;
+  background-color: aliceblue;
+  padding: 1.0rem;
+  border-radius: 25%;
+}
+

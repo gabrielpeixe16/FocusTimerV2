@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer V2</title>
+  <meta name="description" content="temporizador pomodoro">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="src/main.js" defer></script>
+</head>
+<body>
+  <div id="app">
+
+    <div class="content">
+
+      <section id="timer" class="flex">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+  
+      <section id="controls" class="flex">
+        <button 
+          data-action="toggleRunning" 
+          class="ph ph-play-circle">
+        </button>
+
+        <button 
+          data-action="toggleRunning" 
+          class="ph ph-stop-circle">
+        </button>
+
+        <button 
+          data-action="plusFive"
+          class="ph ph-plus-circle">
+        </button>
+
+        <button 
+          data-action="minusFive" 
+          class="ph ph-minus-circle">
+        </button>
+
+      </section>
+
+    </div>
+  
+    <div class="themes">
+      
+      <section id="sounds">
+       
+        <div class="card1">
+          <button data-action="forestSound" class="ph ph-tree"></button>
+          <button data-action="rainSound" class="ph ph-cloud-rain"></button>
+        </div>
+       
+        <div class="card2">
+          <button data-action="coffeSound" class="ph ph-storefront"></button>
+          <button data-action="flameSound" class="ph ph-fire"></button>
+        </div>
+                
+      </section>
+
+    </div>
+   
+
+  </div>
+</body>
+</html>
